@@ -1,0 +1,33 @@
+<div class="modal-header flex layout-row justify-between">
+    <h3 style="border-bottom:none; margin-left:20px;" class="modal-title">------------------</h3>
+    <ng-md-icon ng-click="cancel()" class="delete" icon="close" size="24px" style="position:absolute; cursor:pointer;            fill:#666666;position: absolute!important;right: 13px;"></ng-md-icon>
+</div>
+<div class="modal-body">
+    <div class='flex layout-column justify-between flex-wrap'>
+        <div class="padded-area">
+            <div class='row'>
+                <div class='col-xs-12 form-field-orderTypes_name'>
+                    <md-input-container>
+                        <label>------------------</label>
+                        <input ng-model="entity.orderTypes_name"> </md-input-container>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-xs-12 form-field-orderTypes_note'>
+                    <md-input-container>
+                        <label>------------------</label>
+                        <input ng-model="entity.orderTypes_note"> </md-input-container>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-xs-5">
+                    <md-button class="md-raised" style="width:100%; margin-left:0; margin-right:0" ng-click="cancel()">Отменить</md-button>
+                </div>
+                <div class="col-xs-5 col-xs-offset-2">
+                    <md-button class="md-raised md-primary" style="width:100%; margin-left:0; margin-right:0" ng-click=" save()">Создать</md-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer"></div>

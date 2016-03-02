@@ -1,0 +1,28 @@
+<div class="flex layout-row">
+    <div id="projects_card_page_content" class='page-content'>
+        <div class="flex layout-row flex-wrap" style="justify-content:center" ng-class="{'pure-text' : !isCardEditing}">
+            <div class='group-element flex layout-column'>
+                <h4><span class="header">------------------</span></h4>
+                <div class="padded-area">
+                    <div class='row'>
+                        <div class='col-xs-12 form-field-orderType_name'>
+                            <md-input-container>
+                                <label>------------------</label>
+                                <input ng-model='entity.orderType_name '> </md-input-container>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-xs-12 form-field-orderType_note'>
+                            <md-input-container>
+                                <label>------------------</label>
+                                <input ng-model='entity.orderType_note '> </md-input-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex layout-column justify-end" ng-class="{'invisible' : !isUserEditor()}">
+        <burger-edit></burger-edit>
+    </div>
+</div>
